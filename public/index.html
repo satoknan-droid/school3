@@ -1,41 +1,36 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Ultraviolet</title>
+  <meta charset="utf-8">
+  <title>Ultraviolet</title>
 
-<script src="/baremux/index.js"></script>
-<script src="/uv/uv.bundle.js"></script>
-<script src="/uv/uv.config.js"></script>
-<script src="/uv/uv.handler.js"></script>
-
-<script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/uv/uv.sw.js", {
-    scope: "/uv/"
-  });
-}
-</script>
-
+  /baremux/index.js>
+  /uv/uv.bundle.js
+  /uv/uv.config.jsscript>
+  /uv/uv.handler.js>
 </head>
 
 <body>
-<h1>Ultraviolet</h1>
+  <h1>Ultraviolet</h1>
 
-<form id="uv-form">
-<input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden">
-<input id="uv-address" type="text" placeholder="Search the web freely">
-</form>
+  <form id="uv-form">
+    <input id="uv-search-engine"
+      value="https://www.google.com/search?q=%s"
+      type="hidden">
 
-<p id="uv-error"></p>
-<pre id="uv-error-code"></pre>
+    <input id="uv-address"
+      type="text"
+      placeholder="Search the web freely">
+  </form>
 
-<iframe id="uv-frame" style="display:none"></iframe>
+  <p id="uv-error"></p>
+  <pre id="uv-error-code"></pre>
 
-<script src="register-sw.js"></script>
-<script src="search.js"></script>
-<script src="index.js"></script>
+  <iframe id="uv-frame" style="display:none"></iframe>
+
+  /register-sw.js>
+  /search.js>
+  /index.js>
 
 </body>
 </html>
-``
