@@ -1,6 +1,30 @@
 <!doctype html>
 <html>
-<body style="background:black;color:white">
-<h1>HELLO WORKING</h1>
+<head>
+  <meta charset="utf-8">
+  <title>Ultraviolet</title>
+
+<script src="baremux/index.js
+uv/uv.bundle.js">
+uv/uv.config.js">
+uv/uv.handler.js
+</head>
+
+<body>
+  <h1>Ultraviolet</h1>
+
+  <form id="uv-form">
+    <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden">
+    <input id="uv-address" type="text" placeholder="Search the web">
+  </form>
+
+  <p id="uv-error"></p>
+  <pre id="uv-error-code"></pre>
+
+  <iframe id="uv-frame" style="display:none"></iframe>
+
+  <script src="register-sw.js"></script>
+  <script src="search.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
