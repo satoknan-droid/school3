@@ -1,11 +1,4 @@
-{
-  "name": "app",
-  "version": "1.0.0",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "node src/index.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
-  }
-}
+self.__uv$config = {
+  prefix: "/uv/",
+  bare: "https://tomp.app/",
+};
