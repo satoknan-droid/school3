@@ -8,6 +8,15 @@
   <script src="uv/uv.bundle.js"></script>
   <script src="uv/uv.config.js"></script>
   <script src="uv/uv.handler.js"></script>
+
+  <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/uv/uv.sw.js", {
+      scope: "/uv/"
+    });
+  }
+  </script>
+
 </head>
 
 <body>
@@ -15,7 +24,7 @@
 
   <form id="uv-form">
     <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden">
-    <input id="uv-address" type="text" placeholder="Search the web">
+    <input id="uv-address" type="text" placeholder="Search the web freely">
   </form>
 
   <p id="uv-error"></p>
