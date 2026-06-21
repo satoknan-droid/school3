@@ -10,13 +10,12 @@
   <script src="uv/uv.handler.js"></script>
 
   <script>
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/uv/uv.sw.js", {
-      scope: "/uv/"
-    });
-  }
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/uv/uv.sw.js", {
+        scope: "/uv/"
+      });
+    }
   </script>
-
 </head>
 
 <body>
@@ -37,4 +36,3 @@
   <script src="index.js"></script>
 </body>
 </html>
-``
