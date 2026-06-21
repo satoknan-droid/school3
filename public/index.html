@@ -2,39 +2,23 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Ultraviolet</title>
-
-  <link rel="stylesheet" href="index.css">
-
-  <script src="baremux/index.js"></script>
-  <script src="uv/uv.bundle.js"></script>
-  <script src="uv/uv.config.js"></script>
+  <title>UV TEST</title>
 </head>
 
 <body>
 
-  <h1>Ultraviolet</h1>
+<h1>UV TEST</h1>
 
-  <form id="uv-form">
-    <input id="uv-search-engine"
-      value="https://www.google.com/search?q=%s"
-      type="hidden">
+<form id="uv-form">
+  <input id="uv-search-engine"
+    value="https://www.google.com/search?q=%s"
+    type="hidden">
 
-    <input id="uv-address"
-      type="text"
-      placeholder="Search the web freely">
-  </form>
+  <input id="uv-address" type="text" placeholder="enter url">
+</form>
 
-  <p id="uv-error"></p>
-  <pre id="uv-error-code"></pre>
-
-  <iframe id="uv-frame" style="display:none"></iframe>
-
-  <script src="register-sw.js"></script>
-  <script src="search.js"></script>
-  <script src="index.js"></script>
+<script src="search.js"></script>
+<script src="index.js"></script>
 
 </body>
 </html>
