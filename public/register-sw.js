@@ -1,6 +1,6 @@
 "use strict";
 
-const stockSW = "/uv/uv.sw.js";
+const stockSW = "/uv/sw.js";
 
 async function registerSW() {
   try {
